@@ -22,15 +22,120 @@ time, mark, audio, video {
 }
 /*general styles */
 
-body{
-
+body{ border: 5px solid blue;
+    font-size:20px;
+    color: darkslateblue;
+    
+}
+div#document{
+    widows: 80%;
+  margin:0 auto;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-section{
-
-}
-
-h1, h2, h3, h4{
-
-}
 /*header section style*/
+header{
+    padding: 5%;
+    background-color: paleturquoise;
+}
+h1{
+    color: midnightblue;
+    text-align: left;
+    display:flex;
+    font-size: 45px;
+  }
+  nav{
+      padding: 1%;
+      color:turquoise;
+      font-size: 25px;
+  }
+  nav a{
+    padding: 1px 1px;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-size: 20px;
+    margin-left: 1%;
+    margin-top: 1%;
+  }
+  nav a:hover{
+      color: lightgreen
+  }
+  /* about section */
+.main{
+    border: 5px solid lightskyblue;
+    background-color: lightskyblue;
+}
+.about{
+    display: flex;
+    margin-left: 10px;
+}
+h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.text button{
+    padding: 1px 1px;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-size: 20px;
+    margin-left: 1%;
+    margin-top: 1%;
+    background-color: aliceblue;
+    
+}
+
+.aboutme{
+    text-align: center;
+}
+.firstphoto{
+    width: 45%; 
+}
+.firstphoto img{
+    max-width:100%; 
+    display: flex;
+    justify-content: left;
+    justify-content: start;
+    
+}
+
+/* photos section */
+
+section.projects{
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+    
+    
+}
+div.image img{ 
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    
+}
+/*footer */
+footer {
+    background-color: paleturquoise;
+    padding: 2% 0%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  footer button {
+    padding: 5px 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 22px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 1%;
+    background-color: aliceblue;
+  }
+  
