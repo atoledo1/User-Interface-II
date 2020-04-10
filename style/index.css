@@ -21,14 +21,15 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /*general styles */
-
-body{ border: 5px solid blue;
-    font-size:20px;
+html{
+    font-size: 62.5%;
+}
+body{ border: .5rem solid blue;
+    font-size:2rem;
     color: darkslateblue;
     
 }
 div#document{
-    widows: 80%;
   margin:0 auto;
   font-family: 'Ubuntu', sans-serif;
 }
@@ -42,42 +43,45 @@ h1{
     color: midnightblue;
     text-align: left;
     display:flex;
-    font-size: 45px;
+    font-size: 4.5rem;
   }
   nav{
       padding: 1%;
       color:turquoise;
-      font-size: 25px;
+      font-size: 2.5rem;
   }
   nav a{
-    padding: 1px 1px;
-    border: 1px solid black;
-    border-radius: 2px;
-    font-size: 20px;
+    padding: .1rem .1rem;
+    border: .1rem solid black;
+    border-radius: .2rem;
+    font-size: 2rem;
     margin-left: 1%;
     margin-top: 1%;
   }
   nav a:hover{
       color: lightgreen
   }
+  .hidden{
+      display: none;
+  }
   /* about section */
-.main{
-    border: 5px solid lightskyblue;
+#main{
+    border: .5rem solid lightskyblue;
     background-color: lightskyblue;
 }
 .about{
     display: flex;
-    margin-left: 10px;
+    margin-left: 1rem;
 }
 h2{
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: bold;
 }
 .text button{
-    padding: 1px 1px;
-    border: 1px solid black;
-    border-radius: 2px;
-    font-size: 20px;
+    padding: .1rem .1rem;
+    border: .1rem solid black;
+    border-radius: .2rem;
+    font-size: 2rem;
     margin-left: 1%;
     margin-top: 1%;
     background-color: aliceblue;
@@ -108,15 +112,15 @@ section.projects{
     
 }
 div.image img{ 
-    margin-top: 20px;
-    margin-bottom: 20px; 
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
     display: flex;
     justify-content: space-between;
     max-width: 100%;
     align-items: center;
     flex-direction: column;
-    width: 200px;
-    height: 200px;
+    width: 20rem;
+    height: 20rem;
     
 }
 /*footer */
@@ -129,13 +133,36 @@ footer {
   }
   
   footer button {
-    padding: 5px 5px;
-    border: 1px solid black;
-    border-radius: 5px;
-    font-size: 22px;
+    padding: .5rem .5rem;
+    border: .1rem solid black;
+    border-radius: .5rem;
+    font-size: 2.2rem;
     margin-left: 30%;
     margin-right: 30%;
     margin-top: 1%;
     background-color: aliceblue;
   }
-  
+  /* media queries */
+  @media (max-width: 800px){
+      div.image img{ 
+        margin-top: 1rem;
+        margin-bottom: 1rem; 
+        max-width: 80%;
+        width: 17rem;
+        height: 17rem;
+      }
+      span.project-info{
+          font-size: 1.5rem;
+      }
+  }
+  @media (max-width: 500px){
+
+div.image img{
+    width: 10rem;
+    height: 10rem;
+}
+span.project-info{
+    font-size: 1rem;
+}
+
+  }
